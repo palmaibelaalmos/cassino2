@@ -6,4 +6,6 @@ header{
     justify-content: center;
     color: rgb(239, 111, 108);
 }
-
+.card-desc {
+    min-height: 110px;
+}
