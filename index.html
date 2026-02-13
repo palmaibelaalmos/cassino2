@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
         defer></script>
-    <script type="module" src="./src/main.ts" defer></script>
+    <script type="module" src="./dist/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -61,8 +61,7 @@
                 </div>
             </section>
             
-            <div class="row d-flex flex-nowrap mt-4" style="gap: 5%">
-                
+            <div class="row justify-content-center g-4 mt-4">
                     <div class="card bg-dark text-white rounded-4 shadow" style="width: 300px;">
                     <img src="/imgs/blackjack.jpg" class="card-img-top rounded-top-4" style="object-fit: cover; height: 180px;" alt="...">
                     <div class="card-body">
@@ -140,28 +139,111 @@
     </main>
 
     <div class="modal fade" id="gameModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content bg-dark text-white">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
       
       <div class="modal-header border-secondary">
         <h5 class="modal-title">Blackjack</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
       
-      <div class="modal-body">
-        🎰 Itt indulna a játék!  
-        Ide majd jöhet TypeScript logika később.
-      </div>
-      
-      <div class="modal-footer border-secondary">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Bezárás
-        </button>
-      </div>
+<div class="modal-body">
 
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="bg-black p-4 rounded border border-warning h-100">
+                    <h4>🎮 Játék kipróbálása</h4>
+                    <p>Itt lesz majd a TypeScript játék logika.</p>
+
+                    <button class="btn btn-success mt-3">
+                        Kártya húzás
+                    </button>
+                </div>
+            </div>
+            
+<div class="col-md-6">
+    <div class="bg-black p-4 rounded border border-warning h-100">
+        <h4 class="text-warning">📖 A játék szabályai</h4>
+
+        <h5 class="mt-2">Kifizetések</h5>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped table-bordered text-white mb-0">
+                <thead>
+                    <tr>
+                        <th>Kéz</th>
+                        <th>Szokásos kifizetés</th>
+                        <th>Magyarázat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tökéletes pár</td>
+                        <td>25:1</td>
+                        <td>Azonos színű és azonos szimbólumú pár (ugyanabból a színből)</td>
+                    </tr>
+                    <tr>
+                        <td>Színes pár</td>
+                        <td>12:1</td>
+                        <td>Azonos színű pár (mindkettő piros vagy mindkettő fekete)</td>
+                    </tr>
+                    <tr>
+                        <td>Vegyes pár</td>
+                        <td>6:1</td>
+                        <td>Vegyes színű pár (egy piros és egy fekete)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5 class="mt-4"> </h5>
+        <div class="table-responsive">
+            <table class="table table-dark table-striped table-bordered text-white mb-0">
+                <thead>
+                    <tr>
+                        <th>Kéz</th>
+                        <th>Szokásos kifizetés</th>
+                        <th>Magyarázat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Színsor drill (azonos színű drill)</td>
+                        <td>100:1</td>
+                        <td>Három azonos lap ugyanabból a színből.</td>
+                    </tr>
+                    <tr>
+                        <td>Színsor</td>
+                        <td>40:1</td>
+                        <td>Egymást követő lapok azonos színből.</td>
+                    </tr>
+                    <tr>
+                        <td>Drill</td>
+                        <td>30:1</td>
+                        <td>Három azonos értékű lap.</td>
+                    </tr>
+                    <tr>
+                        <td>Sor</td>
+                        <td>10:1</td>
+                        <td>Egymást követő értékű lapok.</td>
+                    </tr>
+                    <tr>
+                        <td>Szín</td>
+                        <td>5:1</td>
+                        <td>Három azonos színű lap.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
+</div>
+
+        </div>
     </div>
+
+</div>
 
 
 </body>
